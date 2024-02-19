@@ -50,8 +50,11 @@
         top: 50px;
         left: 30px;
         width: 300px;
-        height: 30px;
+        height: 40px;
         z-index: 0;
+        border-style: none;
+        border-radius: 5px;
+        background-color:  hsl(189, 41%, 97%);
     }
 
     #totalCash::placeholder
@@ -128,9 +131,45 @@
     #numberOfPeople
     {
         position: absolute;
-        top: 370px;
+        top: 360px;
         left: 30px;
         color: hsl(184, 14%, 56%);
+        font-weight: bolder;
+    }
+
+    /* 2nd input */
+    .people
+    {
+        position: absolute;
+        top: 410px;
+        left: 35px;
+        z-index: 1;
+        color: hsl(186, 8%, 77%); /* Puedes ajustar el color según tus preferencias */
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    #amountOfPeople
+    {
+        position: absolute;
+        top: 400px;
+        left: 30px;
+        width: 300px;
+        height: 40px;
+        z-index: 0;
+        border-style: none;
+        background-color:  hsl(189, 41%, 97%);
+        border-radius: 5px;
+    }
+
+    #amountOfPeople::placeholder
+    {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        color: hsl(183, 100%, 15%); /* Puedes ajustar el color según tus preferencias */
+        font-size: 20px;
         font-weight: bolder;
     }
 
