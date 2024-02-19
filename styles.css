@@ -1,0 +1,138 @@
+@media screen and (max-width: 375px)
+{
+
+    #title
+    {
+        background-color: hsl(185, 41%, 84%);
+        color: hsl(183, 100%, 15%);
+        width: 375px;
+        height: 200px;
+        font-size: 24px;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #calculator
+    {
+        width: 375px;
+        height: 800px;
+        border-radius: 30px;
+        background-color: whitesmoke;
+        position: absolute;
+        top: 180px;
+    }
+
+    #bill
+    {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        color: hsl(184, 14%, 56%);
+        font-weight: bolder;
+    }
+
+    .currency
+    {
+        position: absolute;
+        top: 55px;
+        left: 35px;
+        z-index: 1;
+        color: hsl(186, 8%, 77%); /* Puedes ajustar el color según tus preferencias */
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    #totalCash
+    {
+        position: absolute;
+        top: 50px;
+        left: 30px;
+        width: 300px;
+        height: 30px;
+        z-index: 0;
+    }
+
+    #totalCash::placeholder
+    {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        color: hsl(183, 100%, 15%); /* Puedes ajustar el color según tus preferencias */
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    #tip-selection
+    {
+        position: absolute;
+        top: 100px;
+        left: 30px;
+        color: hsl(184, 14%, 56%);
+        font-weight: bolder;
+    }
+
+    .button-grid1
+    {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 375px;
+        height: 200px;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px; /* Ajusta el valor para la separación entre columnas */
+        position: absolute;
+        top: 150px;
+        left: 40px;
+    }
+
+    .button-grid2
+    {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 375px;
+        height: 200px;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px; /* Ajusta el valor para la separación entre columnas */
+        position: absolute;
+        top: 150px;
+        left: 180px;
+    }
+
+    button
+    {
+        font-size: 20px;
+        width: 130px;
+        height: 50px;
+        background-color: hsl(183, 100%, 15%);
+        color: white;
+        border-radius: 10px;
+        font-weight: bolder;
+    }
+    button:hover
+    {
+        background-color: hsl(183, 76%, 33%);
+        color: hsl(183, 100%, 15%);
+        font-weight: bolder;
+    }
+
+    #numberOfPeople
+    {
+        position: absolute;
+        top: 370px;
+        left: 30px;
+        color: hsl(184, 14%, 56%);
+        font-weight: bolder;
+    }
+
+
+}
