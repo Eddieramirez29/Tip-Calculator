@@ -17,7 +17,7 @@
     #calculator
     {
         width: 375px;
-        height: 800px;
+        height: 900px;
         border-radius: 30px;
         background-color: whitesmoke;
         position: absolute;
@@ -27,7 +27,7 @@
     #bill
     {
         position: absolute;
-        top: 20px;
+        top: 15px;
         left: 30px;
         color: hsl(184, 14%, 56%);
         font-weight: bolder;
@@ -170,6 +170,85 @@
         transform: translateY(-50%);
         color: hsl(183, 100%, 15%); /* Puedes ajustar el color según tus preferencias */
         font-size: 20px;
+        font-weight: bolder;
+    }
+    
+
+    #tip-calculator
+    {
+        width: 320px;
+        height: 300px;
+        border-radius: 10px;
+        background-color: hsl(183, 100%, 15%);
+        position: absolute;
+        top: 520px;
+        left: 30px;
+    }
+
+    #TipAmount
+    {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: whitesmoke;
+        font-weight: bolder;
+    }
+    #person1
+    {
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        color: hsl(186, 8%, 77%);
+        font-weight: bolder;
+    }
+    #amount{
+        position: absolute;
+        top: 60px;
+        left: 250px;
+        color: whitesmoke;
+        font-weight: bolder;
+    }
+
+    #total
+    {
+        position: absolute;
+        top: 100px;
+        left: 20px;
+        color: whitesmoke;
+        font-weight: bolder;
+    }
+    #person2{
+        position: absolute;
+        top: 140px;
+        left: 20px;
+        color: hsl(186, 8%, 77%);
+        font-weight: bolder;
+    }
+
+    #grandTotal
+    {
+        position: absolute;
+        top: 140px;
+        left: 250px;
+        color: whitesmoke;
+        font-weight: bolder;
+    }
+
+    #reset{
+        position: absolute;
+        top: 200px;
+        left: 20px;
+        width: 280px;
+        height: 50px;
+        background-color: hsl(172, 67%, 35%);
+        color: hsl(183, 100%, 15%);
+        border-radius: 10px;
+        font-weight: bolder;
+        border-style: none;
+    }
+    #reset:hover{
+        background-color:  hsl(172, 67%, 45%);
+        color: hsl(183, 100%, 15%);
         font-weight: bolder;
     }
 
