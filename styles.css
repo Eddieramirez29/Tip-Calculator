@@ -55,6 +55,7 @@
         border-style: none;
         border-radius: 5px;
         background-color:  hsl(189, 41%, 97%);
+        text-align: right;
     }
 
     #totalCash::placeholder
@@ -63,6 +64,12 @@
         top: 50%;
         right: 10px;
         transform: translateY(-50%);
+        color: hsl(183, 100%, 15%); /* Puedes ajustar el color según tus preferencias */
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    input{
         color: hsl(183, 100%, 15%); /* Puedes ajustar el color según tus preferencias */
         font-size: 20px;
         font-weight: bolder;
@@ -127,6 +134,22 @@
         color: hsl(183, 100%, 15%);
         font-weight: bolder;
     }
+    #custom{
+        font-size: 20px;
+        width: 130px;
+        height: 45px;
+        background-color: hsl(189, 41%, 97%);
+        border-radius: 10px;
+        font-weight: bolder;
+    }
+
+    #custom::placeholder
+    {
+        transform: translateY(-25%);
+        transform: translateX(20%);
+        font-size: 20px;
+        font-weight: bolder;
+    }
 
     #numberOfPeople
     {
@@ -160,6 +183,7 @@
         border-style: none;
         background-color:  hsl(189, 41%, 97%);
         border-radius: 5px;
+        text-align: right;
     }
 
     #amountOfPeople::placeholder
