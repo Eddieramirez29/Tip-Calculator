@@ -33,6 +33,16 @@
         font-weight: bolder;
     }
 
+    #warning1
+    {
+        position: absolute;
+        top: 15px;
+        left: 250px;
+        color: hsl(0, 89%, 57%); /* Puedes ajustar el color según tus preferencias */
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
     .currency
     {
         position: absolute;
@@ -160,6 +170,16 @@
         font-weight: bolder;
     }
 
+    #warning2
+    {
+        position: absolute;
+        top: 370px;
+        left: 250px;
+        color: hsl(0, 89%, 57%); /* Puedes ajustar el color según tus preferencias */
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
     /* 2nd input */
     .people
     {
@@ -172,6 +192,8 @@
         font-weight: bolder;
     }
 
+    
+    
     #amountOfPeople
     {
         position: absolute;
