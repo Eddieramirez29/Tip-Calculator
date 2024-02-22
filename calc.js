@@ -82,13 +82,7 @@ custom.addEventListener('keydown', function(event)
     }
 });
 
-// Function to process the entered value
-function processInput(value)
-{
-    // Your logic to handle the entered value
-    alert('Entered value: ' + value);
-    // Add more code as needed
-}
+
 
 //Reset all fields
 reset.addEventListener('click', function()
@@ -103,6 +97,7 @@ function rst()
     totalPerPerson.innerHTML = "$0.00";
     totalCash.value = "";
     amountOfPeople.value = "";
+    custom.value = ""
 }
 
 //Function to verify the input states
@@ -143,7 +138,7 @@ function calculate()
     let total = bill/numberOfPeople + tip;
 
 
-    totalTipPerPerson.innerHTML = "$" + tip;
-    totalPerPerson.innerHTML = "$" + total;
+    totalTipPerPerson.innerHTML = "$" + tip.toFixed(2);
+    totalPerPerson.innerHTML = "$" + total.toFixed(2);
 }
 };
