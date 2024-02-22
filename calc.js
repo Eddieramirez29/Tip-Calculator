@@ -1,3 +1,5 @@
+window.onload = function()
+{
 // Get every ID button.
 let boton5 = document.getElementById('boton1');
 let boton15 = document.getElementById('boton2');
@@ -22,6 +24,7 @@ let percentage;
 //Get tip and total ID.
 let totalTipPerPerson = document.getElementById('amount');
 let totalPerPerson = document.getElementById('grandTotal');
+let custom = document.getElementById('custom');
 
 // Agrega un evento de clic a cada botón
 boton5.addEventListener('click', function()
@@ -54,17 +57,50 @@ boton25.addEventListener('click', function()
     verifyInput();
 });
 
+
+// Add event listener for the keydown event
+custom.addEventListener('keydown', function(event) 
+{
+    // Check if the pressed key is Enter (key code 13)
+    if (event.key === 'Enter') 
+    {
+        // Get the input value and do something with it
+        let inputValue = custom.value;
+        console.log('Entered value:', inputValue);
+        percentage = parseFloat(custom.value)/100;
+
+        // You can call your function or perform any desired action here
+        // For example, you might want to process the entered value
+        if(percentage > 0 && percentage <= 1)
+        {
+            calculate();
+        }
+        else
+        {
+            alert('The value must be between 1 and 100');
+        }
+    }
+});
+
+// Function to process the entered value
+function processInput(value)
+{
+    // Your logic to handle the entered value
+    alert('Entered value: ' + value);
+    // Add more code as needed
+}
+
 //Reset all fields
 reset.addEventListener('click', function()
 {
-    reset();
+    rst();
 });
 
 //Reset function
-function reset()
+function rst()
 {
-    totalTipPerPerson.innerHTML = "";
-    totalPerPerson.innerHTML = "";
+    totalTipPerPerson.innerHTML = "$0.00";
+    totalPerPerson.innerHTML = "$0.00";
     totalCash.value = "";
     amountOfPeople.value = "";
 }
@@ -75,18 +111,18 @@ function verifyInput()
     let input1 = totalCash.value;
     let input2 = amountOfPeople.value;
 
-    if((input1 === 0 && input2 === 0) || (input1 === '' && input2 === ''))
+    if(input1 === '' && input2 === '')
     {
         warning1.innerHTML = 'Can´t be zero';
         warning2.innerHTML = 'Can´t be zero';
     }
-    else if(input1 === 0 || input1 === '')
+    else if(input1 === '')
     {
         warning1.innerHTML = 'Can´t be zero';
         warning2.innerHTML = '';
         
     }
-    else if(input2 === 0 || input2 === '')
+    else if(input2 === '')
     {
         warning1.innerHTML = '';
         warning2.innerHTML = 'Can´t be zero';
@@ -109,7 +145,5 @@ function calculate()
 
     totalTipPerPerson.innerHTML = "$" + tip;
     totalPerPerson.innerHTML = "$" + total;
-    alert("$" + tip);
-    alert("$" + total);
-
 }
+};
